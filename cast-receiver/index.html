@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Drop Zone Cast</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="//www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
+</head>
+<body>
+  <cast-media-player id="caf-player"></cast-media-player>
+  <main id="drop-zone-tv" class="dz-tv">
+    <section class="art-panel">
+      <img id="cover" class="cover" alt="Album artwork" />
+      <div id="cover-fallback" class="cover fallback">DZ</div>
+    </section>
+    <section class="info-panel">
+      <div class="brand-row">
+        <div class="brand">Drop Zone</div>
+        <div class="archive">LOSSLESS ARCHIVE</div>
+      </div>
+      <div id="artist" class="artist">Ready to cast</div>
+      <div id="title" class="title">Choose a track on your Android device</div>
+      <div id="album" class="album"></div>
+      <div class="progress-wrap">
+        <div class="progress-track"><div id="progress" class="progress"></div></div>
+        <div class="time-row"><span id="position">0:00</span><span id="duration">0:00</span></div>
+      </div>
+      <div class="status-row"><span id="state-dot" class="state-dot"></span><span id="state">Waiting for Drop Zone</span></div>
+    </section>
+  </main>
+  <script src="receiver.js"></script>
+</body>
+</html>
